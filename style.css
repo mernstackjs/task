@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+#loginForm,
+#taskForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#loginUsername,
+#loginPassword,
+#registerUsername,
+#registerPassword,
+#task {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#priority,
+#addBtn,
+#loginBtn,
+#registerBtn,
+#logoutBtn {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#addBtn,
+#loginBtn,
+#registerBtn,
+#logoutBtn {
+  background: #007bff;
+  color: white;
+  border: none;
+}
+
+#addBtn:hover,
+#loginBtn:hover,
+#registerBtn:hover,
+#logoutBtn:hover {
+  background: #0056b3;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+li {
+  background: #f9f9f9;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+}
+
+li.low {
+  background-color: #d4edda;
+}
+
+li.medium {
+  background-color: #fff3cd;
+}
+
+li.high {
+  background-color: #f8d7da;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}

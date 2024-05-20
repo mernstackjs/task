@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div id="loginForm">
+        <h2>Login</h2>
+        <input id="loginUsername" type="text" placeholder="Enter Username" />
+        <input
+          id="loginPassword"
+          type="password"
+          placeholder="Enter Password"
+        />
+        <button id="loginBtn">Login</button>
+        <h2>Register</h2>
+        <input id="registerUsername" type="text" placeholder="Enter Username" />
+        <input
+          id="registerPassword"
+          type="password"
+          placeholder="Enter Password"
+        />
+        <button id="registerBtn">Register</button>
+      </div>
+      <div id="taskForm" style="display: none">
+        <input id="task" type="text" placeholder="Enter Your Task" />
+        <select id="priority">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+        <button id="addBtn">Add Task</button>
+        <h2>Tasks</h2>
+        <div id="taskList"></div>
+        <h2>Completed Tasks</h2>
+        <div id="completedTasks"></div>
+        <button id="logoutBtn">Logout</button>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
